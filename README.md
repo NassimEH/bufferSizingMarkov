@@ -111,7 +111,7 @@ Tous les graphes sont sauvegardés dans le dossier `graphes/` au format PNG haut
 
 ## Auteur
 
-Projet réalisé dans le cadre de l'étude du dimensionnement d'un buffer en réseau.
+Projet réalisé dans le cadre de l'étude du dimensionnement d'un buffer en réseau. (Cours de File d'attente, TSP FISA 2A)
 
 ## Licence
 
