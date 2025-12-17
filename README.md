@@ -1,6 +1,9 @@
 # Projet de Dimensionnement d'un Buffer
 
-Ce projet implémente l'analyse d'un système de buffer dans un nœud réseau en utilisant une chaîne de Markov à temps discret.
+[![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+Ce projet implémente l'analyse d'un système de buffer dans un nœud réseau en utilisant une chaîne de Markov à temps discret. Il permet d'étudier le dimensionnement optimal d'un buffer en fonction de différentes capacités et distributions d'arrivées de paquets.
 
 ## Description
 
@@ -66,7 +69,7 @@ Le programme effectue automatiquement :
 
 ## Questions traitées
 
-- **Q1** : Chaîne de Markov (à représenter manuellement pour K=5)
+- **Q1** : Chaîne de Markov (graphe généré automatiquement pour K=5)
 - **Q2** : Distribution stationnaire π(K)
 - **Q3** : Nombre moyen de clients L
 - **Q4** : Débit d'entrée Xe
@@ -76,4 +79,41 @@ Le programme effectue automatiquement :
 - **Q8** : Implémentation Python pour K ∈ {2, 5, 10, 15, 80}
 - **Q9** : Commentaires sur les résultats
 - **Q10** : Analyse avec probabilités modifiées
+
+## Visualisations
+
+Le programme génère automatiquement des graphes pour toutes les questions :
+
+- **Q1** : Diagramme de la chaîne de Markov (graphe orienté)
+- **Q2** : Histogrammes de la distribution stationnaire pour chaque K
+- **Q3-Q7** : Graphiques des métriques en fonction de K
+- **Q10** : Comparaisons entre les deux configurations
+
+Tous les graphes sont sauvegardés dans le dossier `graphes/` au format PNG haute résolution (300 DPI).
+
+## Structure du projet
+
+```
+.
+├── buffer_dimensionnement.py    # Code principal
+├── requirements.txt              # Dépendances Python
+├── README.md                     # Documentation principale
+├── .gitignore                    # Fichiers ignorés par Git
+└── graphes/                      # Dossier contenant tous les graphes
+    ├── README.md                 # Documentation des graphes
+    ├── Q1_chaine_markov_K5.png
+    ├── Q2_distribution_stationnaire(Original).png
+    ├── Q2_distribution_stationnaire(Nouvelle).png
+    ├── Q3-Q7_metriques_K(Original).png
+    ├── Q3-Q7_metriques_K(Nouvelle).png
+    └── Q10_comparaison_configurations.png
+```
+
+## Auteur
+
+Projet réalisé dans le cadre de l'étude du dimensionnement d'un buffer en réseau.
+
+## Licence
+
+Ce projet est sous licence MIT.
 
