@@ -27,7 +27,7 @@ Le système modélise un nœud réseau (n1) qui reçoit des paquets et les trans
 ### Configuration modifiée (Question 10)
 - p₀ = 0.5 (probabilité de 0 arrivée par slot)
 - p₁ = 0.2 (probabilité de 1 arrivée par slot)
-- p₃ = 0.3 (probabilité de 3 arrivées par slot)
+- p₂ = 0.3 (probabilité de 2 arrivées par slot)
 
 ## Installation
 
